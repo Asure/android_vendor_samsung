@@ -31,19 +31,19 @@ PRODUCT_COPY_FILES += \
 
 # PowerVR
 PRODUCT_COPY_FILES += \
-    vendor/samsung/dropad/proprietary/pvrsrvinit:/vendor/bin/pvrsrvinit \
-    vendor/samsung/dropad/proprietary/libIMGegl.so:/vendor/lib/libIMGegl.so \
-    vendor/samsung/dropad/proprietary/libPVRScopeServices.so:/vendor/lib/libPVRScopeServices.so \
-    vendor/samsung/dropad/proprietary/libglslcompiler.so:/vendor/lib/libglslcompiler.so \
-    vendor/samsung/dropad/proprietary/libpvr2d.so:/vendor/lib/libpvr2d.so \
-    vendor/samsung/dropad/proprietary/libpvrANDROID_WSEGL.so:/vendor/lib/libpvrANDROID_WSEGL.so \
-    vendor/samsung/dropad/proprietary/libsrv_init.so:/vendor/lib/libsrv_init.so \
-    vendor/samsung/dropad/proprietary/libsrv_um.so:/vendor/lib/libsrv_um.so \
-    vendor/samsung/dropad/proprietary/libusc.so:/vendor/lib/libusc.so \
-    vendor/samsung/dropad/proprietary/libEGL_POWERVR_SGX540_120.so:/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
-    vendor/samsung/dropad/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-    vendor/samsung/dropad/proprietary/libGLESv2_POWERVR_SGX540_120.so:/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
-    vendor/samsung/dropad/proprietary/gralloc.s5pc110.so:/vendor/lib/hw/gralloc.s5pc110.so
+    vendor/samsung/dropad/proprietary/pvrsrvinit:/system/vendor/bin/pvrsrvinit \
+    vendor/samsung/dropad/proprietary/libIMGegl.so:/system/vendor/lib/libIMGegl.so \
+    vendor/samsung/dropad/proprietary/libPVRScopeServices.so:/system/vendor/lib/libPVRScopeServices.so \
+    vendor/samsung/dropad/proprietary/libglslcompiler.so:/system/vendor/lib/libglslcompiler.so \
+    vendor/samsung/dropad/proprietary/libpvr2d.so:/system/vendor/lib/libpvr2d.so \
+    vendor/samsung/dropad/proprietary/libpvrANDROID_WSEGL.so:/system/vendor/lib/libpvrANDROID_WSEGL.so \
+    vendor/samsung/dropad/proprietary/libsrv_init.so:/system/vendor/lib/libsrv_init.so \
+    vendor/samsung/dropad/proprietary/libsrv_um.so:/system/vendor/lib/libsrv_um.so \
+    vendor/samsung/dropad/proprietary/libusc.so:/system/vendor/lib/libusc.so \
+    vendor/samsung/dropad/proprietary/libEGL_POWERVR_SGX540_120.so:/system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    vendor/samsung/dropad/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:/system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    vendor/samsung/dropad/proprietary/libGLESv2_POWERVR_SGX540_120.so:/system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    vendor/samsung/dropad/proprietary/gralloc.s5pc110.so:/system/vendor/lib/hw/gralloc.s5pc110.so
 
 # Wifi
 PRODUCT_COPY_FILES += \
