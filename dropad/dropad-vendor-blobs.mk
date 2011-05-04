@@ -43,7 +43,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dropad/proprietary/libEGL_POWERVR_SGX540_120.so:/system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
     vendor/samsung/dropad/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:/system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
     vendor/samsung/dropad/proprietary/libGLESv2_POWERVR_SGX540_120.so:/system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
-    vendor/samsung/dropad/proprietary/gralloc.s5pc110.so:/system/vendor/lib/hw/gralloc.s5pc110.so
+    vendor/samsung/dropad/proprietary/gralloc.s5pc110.so:/system/vendor/lib/hw/gralloc.s5pc110.so \
+    vendor/samsung/dropad/proprietary/gralloc.default.so:/system/lib/hw/gralloc.default.so
 
 # Wifi
 PRODUCT_COPY_FILES += \
@@ -63,15 +64,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dropad/proprietary/sensors.s5pc110.so:/system/lib/hw/sensors.s5pc110.so
 
 # OMX (need to verify)
-PRODUCT_COPY_FILES += \
-    vendor/samsung/dropad/proprietary/secomxregistry:/system/etc/secomxregistry \
-    vendor/samsung/dropad/proprietary/libOMX.SEC.AVC.Decoder.so:/system/lib/libOMX.SEC.AVC.Decoder.so \
-    vendor/samsung/dropad/proprietary/libOMX.SEC.M4V.Decoder.so:/system/lib/libOMX.SEC.M4V.Decoder.so \
-    vendor/samsung/dropad/proprietary/libOMX.SEC.WMV.Decoder.so:/system/lib/libOMX.SEC.WMV.Decoder.so \
-    vendor/samsung/dropad/proprietary/libOMX.SEC.AVC.Encoder.so:/system/lib/libOMX.SEC.AVC.Encoder.so \
-    vendor/samsung/dropad/proprietary/libOMX.SEC.M4V.Encoder.so:/system/lib/libOMX.SEC.M4V.Encoder.so \
-    vendor/samsung/dropad/proprietary/libSEC_OMX_Core.so:/system/lib/libSEC_OMX_Core.so \
-    vendor/samsung/dropad/proprietary/libSEC_Resourcemanager.so:/system/lib/libSEC_Resourcemanager.so
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/dropad/proprietary/secomxregistry:/system/etc/secomxregistry \
+#    vendor/samsung/dropad/proprietary/libOMX.SEC.AVC.Decoder.so:/system/lib/libOMX.SEC.AVC.Decoder.so \
+#    vendor/samsung/dropad/proprietary/libOMX.SEC.M4V.Decoder.so:/system/lib/libOMX.SEC.M4V.Decoder.so \
+#    vendor/samsung/dropad/proprietary/libOMX.SEC.WMV.Decoder.so:/system/lib/libOMX.SEC.WMV.Decoder.so \
+#    vendor/samsung/dropad/proprietary/libOMX.SEC.AVC.Encoder.so:/system/lib/libOMX.SEC.AVC.Encoder.so \
+#    vendor/samsung/dropad/proprietary/libOMX.SEC.M4V.Encoder.so:/system/lib/libOMX.SEC.M4V.Encoder.so \
+#    vendor/samsung/dropad/proprietary/libSEC_OMX_Core.so:/system/lib/libSEC_OMX_Core.so \
+#    vendor/samsung/dropad/proprietary/libSEC_Resourcemanager.so:/system/lib/libSEC_Resourcemanager.so
+# Disabled, get them from dropad.mk now as packages.
 
 # vold stuff (need to verify)
 PRODUCT_COPY_FILES += \
