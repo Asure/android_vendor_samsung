@@ -1,4 +1,4 @@
-#!/system/busybox/bin/sh
+#!/system/bin/sh
 #bdwgprefix := /system/busybox/bin/
 
 kserver(){

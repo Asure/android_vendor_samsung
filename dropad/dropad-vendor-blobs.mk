@@ -21,7 +21,8 @@
 PRODUCT_COPY_FILES := \
     vendor/samsung/dropad/proprietary/asound.conf:/system/etc/asound.conf \
     vendor/samsung/dropad/proprietary/asound0.conf:/system/etc/asound0.conf \
-    vendor/samsung/dropad/proprietary/asound1.conf:/system/etc/asound1.conf
+    vendor/samsung/dropad/proprietary/asound1.conf:/system/etc/asound1.conf \
+    vendor/samsung/dropad/proprietary/audio_sw.sh:/system/etc/audio_sw.sh
 
 # Camera
 PRODUCT_COPY_FILES += \
