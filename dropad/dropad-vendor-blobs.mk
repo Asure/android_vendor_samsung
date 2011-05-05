@@ -54,6 +54,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dropad/proprietary/fakeBoardData_AR6002.bin:/system/wifi/fakeBoardData_AR6002.bin \
     vendor/samsung/dropad/proprietary/ar6000.ko:system/lib/modules/ar6000.ko \
     vendor/samsung/dropad/proprietary/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
+    vendor/samsung/dropad/proprietary/wpa_supplicant:/system/bin/wpa_supplicant \
+    vendor/samsung/dropad/proprietary/dhcpcd.conf:/system/etc/dhcpcd/dhcpcd.conf \
     vendor/samsung/dropad/proprietary/wpa_cli:/system/bin/wpa_cli
 
 # Misc hw
