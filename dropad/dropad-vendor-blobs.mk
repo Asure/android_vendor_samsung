@@ -19,17 +19,14 @@
 # Alsa Sound
 
 PRODUCT_COPY_FILES := \
+    vendor/samsung/dropad/proprietary/libcamera.so:obj/lib/libcamera.so
+
+PRODUCT_COPY_FILES += \
     vendor/samsung/dropad/proprietary/asound.conf:/system/etc/asound.conf \
     vendor/samsung/dropad/proprietary/asound0.conf:/system/etc/asound0.conf \
     vendor/samsung/dropad/proprietary/asound1.conf:/system/etc/asound1.conf \
     vendor/samsung/dropad/proprietary/audio_sw.sh:/system/etc/audio_sw.sh \
     vendor/samsung/dropad/proprietary/libaudio.so:/system/lib/libaudio.so
-
-# Camera
-PRODUCT_COPY_FILES += \
-    vendor/samsung/dropad/proprietary/libcamera.so:/system/lib/libcamera.so \
-    vendor/samsung/dropad/proprietary/libcamera_client.so:/system/lib/libcamera_client.so
-#   vendor/samsung/dropad/proprietary/libcameraservice.so:/system/lib/libcameraservice.so
 
 # PowerVR
 PRODUCT_COPY_FILES += \
@@ -61,14 +58,17 @@ PRODUCT_COPY_FILES += \
 
 # Misc hw
 PRODUCT_COPY_FILES += \
+    vendor/samsung/dropad/proprietary/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/dropad/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so \
     vendor/samsung/dropad/proprietary/copybit.s5pc110.so:/system/lib/hw/copybit.s5pc110.so \
     vendor/samsung/dropad/proprietary/lights.s5pc110.so:/system/lib/hw/lights.s5pc110.so \
-    vendor/samsung/dropad/proprietary/overlay.s5pc110.so:/system/lib/hw/overlay.s5pc110.so \
     vendor/samsung/dropad/proprietary/sensors.s5pc110.so:/system/lib/hw/sensors.s5pc110.so
+#    vendor/samsung/dropad/proprietary/overlay.s5pc110.so:/system/lib/hw/overlay.s5pc110.so 
+
 
 # OMX (need to verify)
 #PRODUCT_COPY_FILES += \
-#    vendor/samsung/dropad/proprietary/secomxregistry:/system/etc/secomxregistry \
+    vendor/samsung/dropad/proprietary/secomxregistry:/system/etc/secomxregistry 
 #    vendor/samsung/dropad/proprietary/libOMX.SEC.AVC.Decoder.so:/system/lib/libOMX.SEC.AVC.Decoder.so \
 #    vendor/samsung/dropad/proprietary/libOMX.SEC.M4V.Decoder.so:/system/lib/libOMX.SEC.M4V.Decoder.so \
 #    vendor/samsung/dropad/proprietary/libOMX.SEC.WMV.Decoder.so:/system/lib/libOMX.SEC.WMV.Decoder.so \
