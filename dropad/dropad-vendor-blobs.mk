@@ -65,6 +65,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dropad/proprietary/sensors.s5pc110.so:/system/lib/hw/sensors.s5pc110.so
 #    vendor/samsung/dropad/proprietary/overlay.s5pc110.so:/system/lib/hw/overlay.s5pc110.so 
 
+# HDMI Video libraries
+PRODUCT_COPY_FILES += \
+    vendor/samsung/dropad/proprietary/libhdmi.so:system/lib/libhdmi.so \
+    vendor/samsung/dropad/proprietary/libhdmiservice.so:system/lib/libhdmiservice.so \
+    vendor/samsung/dropad/proprietary/libhdmiservice_jni.so:system/lib/libhdmiservice_jni.so \
 
 # OMX (need to verify)
 #PRODUCT_COPY_FILES += \
